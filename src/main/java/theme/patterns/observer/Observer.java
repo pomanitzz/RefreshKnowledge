@@ -1,4 +1,4 @@
-package theme.pattern.observer;
+package theme.patterns.observer;
 
 public class Observer {
     public static void main(String[] args) {
