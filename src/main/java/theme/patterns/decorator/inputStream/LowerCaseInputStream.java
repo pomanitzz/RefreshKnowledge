@@ -15,12 +15,4 @@ public class LowerCaseInputStream extends FilterInputStream {
         return ch == -1 ? ch : Character.toLowerCase((char)ch);
     }
 
-    @Override
-    public int read(byte[] b, int off, int len) throws IOException {
-        var result = in.read(b, off, len);
-        for (int i = off; i < off + result; i++) {
-            b[i] = (byte) Character.toLowerCase((char) b[i]);
-        }
-        return result;
-    }
 }

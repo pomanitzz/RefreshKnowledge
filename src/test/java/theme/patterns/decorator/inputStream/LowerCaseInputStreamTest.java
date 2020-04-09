@@ -12,7 +12,7 @@ public class LowerCaseInputStreamTest {
     public static final String THIS_STRING_SHOULD_BE_CONVERTED_TO_LOWER_CASE_LOWER = "this string should be converted to lower case.";
 
     @Test
-    public void main() throws IOException {
+    public void testRead() throws IOException {
         StringBuilder stringBuilder = new StringBuilder();
             int ch;
             LowerCaseInputStream inputStream = new LowerCaseInputStream(
