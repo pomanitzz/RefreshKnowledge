@@ -3,7 +3,7 @@ package theme.patterns.creational.factory;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class PizzaSimulator {
+public class PizzaSimulatorTest {
 
     @Test
     public void testChicagoPizza() {

@@ -11,7 +11,7 @@ public class WeatherData implements Subject {
     private double humidity;
     private double pressure;
 
-    private List<Observer> observers;
+    private final List<Observer> observers;
     private boolean changed = false;
 
     public WeatherData() {
@@ -52,4 +52,15 @@ public class WeatherData implements Subject {
         this.changed = true;
     }
 
+    public double getTemperature() {
+        return temperature;
+    }
+
+    public double getHumidity() {
+        return humidity;
+    }
+
+    public double getPressure() {
+        return pressure;
+    }
 }
